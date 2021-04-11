@@ -31,6 +31,7 @@ public class moveing : MonoBehaviour
         ani = GetComponent<Animator>();
         PlayerTrans = GetComponent<Transform>();
         PlayerCC2D = GetComponent<CapsuleCollider2D>();
+        Debug.Log("GameStart for test");
     }
     
     void Update()
