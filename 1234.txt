@@ -1,5 +1,5 @@
 hello
+<<<<<<< HEAD
+=======
 LHEHEOHELOHELOEHLOLO
-Hi
-Wonji
-Mingi
+>>>>>>> 44903d1ea50f0c87a933507815e7e32ac2d9a88d
