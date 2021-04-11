@@ -1,3 +1,6 @@
 hello
 wonji
+<<<<<<< Updated upstream
 wonji
+=======
+>>>>>>> Stashed changes
