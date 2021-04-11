@@ -14,6 +14,7 @@ public class scoremanager : MonoBehaviour {
 
     public static scoremanager instance; //싱글톤 선언
     void Awake() {
+    Debug.Log("용우수정");
     scoremanager.instance = this; //싱글톤 부여
     }
 
