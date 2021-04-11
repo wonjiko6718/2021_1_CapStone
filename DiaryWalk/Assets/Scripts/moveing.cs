@@ -6,6 +6,8 @@ public class moveing : MonoBehaviour
 {
     float h;
     private float Hp = 100.0f;
+    private float stamina = 50.0f;
+    private float Recoverystamina = 0;
     private bool canWalk = true;
     private bool playerHit = false;
     private bool playerHit2 = false;
@@ -14,7 +16,6 @@ public class moveing : MonoBehaviour
     private bool canjump = true;
     private bool cancrouch = true;
     private int playerHitStack = 0;
-    private float walkspeed = 2;
     private float runspeed = 5;
     private float jumpPower = 5f;
     Rigidbody2D rigid;
@@ -44,6 +45,25 @@ public class moveing : MonoBehaviour
     void FixedUpdate()
     {        
         Move();
+        staminaGauge();
+
+        if(Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D) || Input.GetButtonDown("Jump") && !ani.GetBool("isjumping"))
+        {
+            Recoverystamina=0;
+            Debug.Log("스태미나가 회복을 멈추고 있습니다.");
+        }
+
+        if(Input.GetKey(KeyCode.LeftShift) && stamina > 0 || !ani.GetBool("isjumping"))
+        {
+            stamina -= 0.4f;
+            Debug.Log("스태미나가 0.4씩 감소되고있습니다");
+            Debug.Log(stamina);
+        }
+
+        else
+        {
+            Recovery();
+        }
     }
      
     // collider Trigger method
@@ -135,6 +155,7 @@ public class moveing : MonoBehaviour
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             ani.SetBool("isjumping", true);
             cancrouch = false;
+            ani.SetBool("isCrouch", false);
         }
     }
     
@@ -188,7 +209,7 @@ public class moveing : MonoBehaviour
             }
             else 
             {
-            runspeed = walkspeed;
+            runspeed = 2;
             cancrouch = true; // 달리기 종료 시 앉기 가능 설정
             }
         }
@@ -228,5 +249,43 @@ public class moveing : MonoBehaviour
             gameObject.SetActive(false);
             Debug.Log("죽었습니다.");
         }
-    } 
+    }
+
+    void staminaGauge()
+    {
+        if (stamina <= 0)
+        {
+            stamina = 0;
+        }
+        if (stamina >= 50)
+        {
+            stamina = 50;
+        }
+    }
+
+    void Recovery()
+    {
+        if (stamina >= 50)
+        {
+            Recoverystamina = 0; // 스태미나 50이상일때 회복 시간이 흐르지 않음 
+            return;
+        }
+        Recoverystamina += Time.fixedDeltaTime; // 회복시간 누적
+        if(Recoverystamina > 3)
+        {
+            stamina += 0.2f; // 회복시간이 3초를 넘어갈때마다 0.2씩 회복
+            Debug.Log(stamina);  
+        }
+        
+        if (stamina <= 50)
+        {
+            runspeed = 2;
+        }
+
+        if (stamina <= 50 && Input.GetButtonDown("Jump"))
+        {
+            canjump = false;
+        }    
+ 
+    }
 }
