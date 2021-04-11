@@ -1,3 +1,7 @@
 hello
 wonji
+<<<<<<< Updated upstream
 wonji
+=======
+YongWoo
+>>>>>>> Stashed changes
