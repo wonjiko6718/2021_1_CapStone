@@ -142,6 +142,7 @@ MonoBehaviour:
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   controlID: 33
 =======
 <<<<<<< HEAD
@@ -149,6 +150,9 @@ MonoBehaviour:
 =======
   controlID: 33
 >>>>>>> 0f1401cbc6d0360b413323257da33b2caad94bd7
+>>>>>>> Stashed changes
+=======
+  controlID: 118
 >>>>>>> Stashed changes
 --- !u!114 &7
 MonoBehaviour:
@@ -174,7 +178,7 @@ MonoBehaviour:
   m_MinSize: {x: 336, y: 494}
   m_MaxSize: {x: 14006, y: 14044}
   vertical: 1
-  controlID: 34
+  controlID: 76
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
