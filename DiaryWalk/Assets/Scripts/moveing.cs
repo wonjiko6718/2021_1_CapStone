@@ -53,7 +53,7 @@ public class moveing : MonoBehaviour
             Debug.Log("스태미나가 회복을 멈추고 있습니다.");
         }
 
-        if(Input.GetKey(KeyCode.LeftShift) && stamina > 0 || Input.GetButtonDown("Jump") && !ani.GetBool("isjumping"))
+        if(Input.GetKey(KeyCode.LeftShift) && stamina > 0 && Mathf.Abs(rigid.velocity.x) > 0)
         {
             stamina -= 0.4f;
             Debug.Log("스태미나가 0.4씩 감소되고있습니다");
@@ -150,7 +150,7 @@ public class moveing : MonoBehaviour
 
     void Jump() // 점프 
     {
-        if (Input.GetButtonDown("Jump") && !ani.GetBool("isjumping") && canjump == true) 
+        if (Input.GetButtonDown("Jump") && !ani.GetBool("isjumping") && canjump == true && stamina >0.1) 
         {
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             ani.SetBool("isjumping", true);
