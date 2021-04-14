@@ -5,24 +5,24 @@ using UnityEngine;
 public class moveing : MonoBehaviour
 {
     float h;
-    private float Hp = 100.0f;
-    private float stamina = 50.0f;
-    private float Recoverystamina = 0;
-    private bool canWalk = true;
-    private bool playerHit = false;
-    private bool playerHit2 = false;
-    private bool isground = false;
-    private float noJump = 0;
-    private bool canjump = true;
-    private bool cancrouch = true;
-    private int playerHitStack = 0;
-    private float runspeed = 5;
-    private float jumpPower = 5f;
+    public float Hp = 100.0f;
+    public float stamina = 50.0f;
+    float Recoverystamina = 0;
+    bool canWalk = true;
+    bool playerHit = false;
+    bool playerHit2 = false;
+    bool isground = false;
+    float noJump = 0;
+    bool canjump = true;
+    bool cancrouch = true;
+    int playerHitStack = 0;
+    float runspeed = 5;
+    float jumpPower = 5f;
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator ani;
-    private Transform PlayerTrans;
-    private CapsuleCollider2D PlayerCC2D;    
+    Transform PlayerTrans;
+    CapsuleCollider2D PlayerCC2D;    
     
     void Awake()
     {
