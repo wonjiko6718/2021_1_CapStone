@@ -65,9 +65,9 @@ public class scoremanager : MonoBehaviour {
     }
 
     void OnGUI() {
-        GUIStyle message = new GUIStyle(GUI.skin.label);
+        GUIStyle message = new GUIStyle(GUI.skin.label); //message 이름으로 GUI설정값들을 모아놓는 GUIStyle 선언
         message.fontSize = 36;
         message.normal.textColor=new Color(1,1,1,messagealpha);
-        GUILayout.Label(messagecontents,message);
+        GUI.Label (new Rect (0,40,1000,300), messagecontents, message);
     }
 }
