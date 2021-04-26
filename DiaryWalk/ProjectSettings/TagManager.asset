@@ -9,6 +9,8 @@ TagManager:
   - Hit
   - diary
   - key
+  - Enemy
+  - Enemy_1
   layers:
   - Default
   - TransparentFX
@@ -22,8 +24,8 @@ TagManager:
   - Platform
   - Player
   - PlayerDamaged
-  - 
-  - 
+  - Enemy
+  - Enemy_1
   - 
   - 
   - 
