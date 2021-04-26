@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class diary : MonoBehaviour
-{   
+{ 
     public bool isdiary = false;
 	public int getscore = 1;
     // Start is called before the first frame update
@@ -11,6 +12,7 @@ public class diary : MonoBehaviour
     {
         
     }
+   
     void OnTriggerEnter2D (Collider2D other) {
 		if (other.gameObject.tag=="Player") {
             //isdiary = true;

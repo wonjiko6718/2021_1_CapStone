@@ -22,8 +22,10 @@ public class moveing : MonoBehaviour
     SpriteRenderer spriteRenderer;
     Animator ani;
     Transform PlayerTrans;
-    CapsuleCollider2D PlayerCC2D;    
-    
+    CapsuleCollider2D PlayerCC2D;
+   
+
+
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -289,4 +291,6 @@ public class moveing : MonoBehaviour
         }    
  
     }
+
+  
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class scoremanager : MonoBehaviour {
     public int diarycount = 0;
@@ -11,10 +12,33 @@ public class scoremanager : MonoBehaviour {
     public float timer2 = 0.0f;
     public Texture2D diaryimage;
     public Texture2D keyimage;
+    public GameObject menuSet;
+    public GameObject player;
+
 
     public static scoremanager instance; //싱글톤 선언
+
+
+    void Start()
+    {
+        GameLoad();
+
+    }
+
+
     void Awake() {
     scoremanager.instance = this; //싱글톤 부여
+    }
+    void Update()
+    {
+        if (Input.GetButtonDown("Cancel"))
+        {   //서브메뉴
+            if (menuSet.activeSelf)
+                menuSet.SetActive(false);
+            else
+                menuSet.SetActive(true);
+        }
+            
     }
 
     void FixedUpdate() { //게임 내내 실행되야 하므로 Update에 작성함
@@ -69,5 +93,30 @@ public class scoremanager : MonoBehaviour {
         message.fontSize = 36;
         message.normal.textColor=new Color(1,1,1,messagealpha);
         GUI.Label (new Rect (0,40,1000,300), messagecontents, message);
+    }
+    public void GameSave()
+    {
+        PlayerPrefs.SetFloat("PlayerX", player.transform.position.x);
+        PlayerPrefs.SetFloat("PlayerY", player.transform.position.y);
+        PlayerPrefs.Save();
+
+
+    }
+
+    public void GameLoad()
+    {
+        if (!PlayerPrefs.HasKey("PlayerX"))
+            return;
+
+        float x = PlayerPrefs.GetFloat("PlayerX");
+        float y = PlayerPrefs.GetFloat("PlayerY");
+
+        player.transform.position = new Vector3(x, y, 0);
+
+    }
+
+    public void GameExit()
+    {
+        Application.Quit();
     }
 }
