@@ -25,7 +25,10 @@ public class Camera_move : MonoBehaviour {
 
 
 	// 캐릭터 초기화
+	void Awake() {
+		Screen.SetResolution(1280, 720, true);
 
+	}
 	void Start () {
 
 		player = GameObject.FindGameObjectWithTag ("Player");

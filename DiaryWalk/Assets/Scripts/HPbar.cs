@@ -16,6 +16,6 @@ public class HPbar : MonoBehaviour
     void Update()
     {
         nowhp = GameObject.Find("Player").GetComponent<moveing>().Hp;
-        this.gameObject.GetComponent<Slider>().value= nowhp;
+        this.gameObject.GetComponent<Slider>().value= nowhp/100;
     }
 }
