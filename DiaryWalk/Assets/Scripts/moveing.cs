@@ -50,7 +50,7 @@ public class moveing : MonoBehaviour
         Move();
         staminaGauge();
 
-        if(Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D) || Input.GetButtonDown("Jump") && !ani.GetBool("isjumping"))
+        if(Mathf.Abs(rigid.velocity.x) > 0 || Mathf.Abs(rigid.velocity.y) > 0)
         {
             Recoverystamina=0;
             Debug.Log("스태미나가 회복을 멈추고 있습니다.");
