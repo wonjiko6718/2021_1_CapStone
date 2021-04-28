@@ -48,3 +48,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: First Forward(Item_else)
+    uniqueID: 4217795
+    locked: 0
+  - name: Second Forward(Monster_Spawned)
+    uniqueID: 3965067559
+    locked: 0
+  - name: Third Forward(Player)
+    uniqueID: 16069505
+    locked: 0
+  - name: Fourth Forward(Monster_Main)
+    uniqueID: 4248951053
+    locked: 0
+  - name: Fifth Forward(empty)
+    uniqueID: 395579185
+    locked: 0
+  - name: Final Forward(Background)
+    uniqueID: 821312359
+    locked: 0
