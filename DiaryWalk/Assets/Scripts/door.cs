@@ -37,7 +37,7 @@ public class door : MonoBehaviour {
     }
     void OnTriggerEnter2D (Collider2D other) {
 		if (other.gameObject.tag=="Player") {
-      changedoorsprite();
+            changedoorsprite();
 		}
     }
     void OnTriggerExit2D(Collider2D other) {
@@ -56,7 +56,7 @@ public class door : MonoBehaviour {
     }
     void OnTriggerStay2D(Collider2D other)
     {
-        if(other.tag == "Player" && Input.GetKey(KeyCode.E)) // Player Push Portal
+        if(other.tag == "Player" && Input.GetKeyDown(KeyCode.E)) // Player Push Portal
         {
             PlayerTarget = other.gameObject; // Get Player
             UsePortal();
