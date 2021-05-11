@@ -30,8 +30,10 @@ public class EnemyMove : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
+        {
             anim.SetTrigger("Screaming");
-            Destroy(gameObject,.60f);
+            Destroy(gameObject, .60f);
+        }
     }
 
     void Think()

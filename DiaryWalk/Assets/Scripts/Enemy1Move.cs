@@ -7,21 +7,20 @@ public class Enemy1Move : MonoBehaviour
     Rigidbody2D rigid;
     Animator anim;
     public int nextMove;
-    public GameObject Enemy;
+    public GameObject Enemy1;
     public GameObject Player;
     SpriteRenderer spriteRenderer;
     Transform target;
     float moveSpeed = 3f;
     float contactDistance = 1f;
     bool follow = false;
-    string dist = "";
     public int targetDirection;
+    private Vector3 movement;
 
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-
     }
 
     void Update()
@@ -33,8 +32,8 @@ public class Enemy1Move : MonoBehaviour
     {
         float PlayerX = target.transform.position.x; // Player Position X
         float MosterX = this.transform.position.x; // Monster Position X
-        float DirCirculate = MosterX-PlayerX; // Moster Postion X - Player Position X
-        if(DirCirculate >= 0)
+        float DirCirculate = MosterX - PlayerX; // Moster Postion X - Player Position X
+        if (DirCirculate >= 0)
         {
             targetDirection = 0; // Left Direction
         }
@@ -48,40 +47,7 @@ public class Enemy1Move : MonoBehaviour
 
             float distance = Vector3.Distance(target.position, transform.position);
 
-
     }
-
- /*   private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Vector3 moveVelocity = Vector3.zero;
-        if (follow)
-        {
-            if (target.position.x < transform.position.x)
-                dist = "Left";
-            else if (target.position.x > transform.position.x)
-                dist = "Right";
-        }
-        else
-        {
-            if (nextMove == -1)
-                dist = "Left";
-            else if (nextMove == 2)
-                dist = "Right";
-        }
-
-        if(dist == "Left")
-        {
-            moveVelocity = Vector3.left;
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-        else if (dist == "Right")
-        {
-            moveVelocity = Vector3.right;
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
-
-    }*/
-
 
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -89,7 +55,14 @@ public class Enemy1Move : MonoBehaviour
         {
             anim.SetTrigger("Chasing");
             follow = true;
-            
+            if (targetDirection == 0)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else if (targetDirection == 1)
+            {
+                spriteRenderer.flipX = false;
+            }
         }
     }
 
@@ -98,8 +71,7 @@ public class Enemy1Move : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             anim.SetTrigger("isWalking");
-            follow = false;
-            
+            follow = false;         
         }
     }
 
