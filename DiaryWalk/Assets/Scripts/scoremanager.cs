@@ -21,7 +21,6 @@ public class scoremanager : MonoBehaviour {
 
     void Start()
     {
-        GameLoad();
 
     }
 
@@ -29,16 +28,7 @@ public class scoremanager : MonoBehaviour {
     void Awake() {
     scoremanager.instance = this; //싱글톤 부여
     }
-    void Update()
-    {
-        if (Input.GetButtonDown("Cancel"))
-        {   //서브메뉴
-            if (menuSet.activeSelf)
-                menuSet.SetActive(false);
-            else
-                menuSet.SetActive(true);
-        }
-            
+    void Update() {  
     }
 
     void FixedUpdate() { //게임 내내 실행되야 하므로 Update에 작성함
@@ -93,26 +83,6 @@ public class scoremanager : MonoBehaviour {
         message.fontSize = 36;
         message.normal.textColor=new Color(1,1,1,messagealpha);
         GUI.Label (new Rect (0,40,1000,300), messagecontents, message);
-    }
-    public void GameSave()
-    {
-        PlayerPrefs.SetFloat("PlayerX", player.transform.position.x);
-        PlayerPrefs.SetFloat("PlayerY", player.transform.position.y);
-        PlayerPrefs.Save();
-
-
-    }
-
-    public void GameLoad()
-    {
-        if (!PlayerPrefs.HasKey("PlayerX"))
-            return;
-
-        float x = PlayerPrefs.GetFloat("PlayerX");
-        float y = PlayerPrefs.GetFloat("PlayerY");
-
-        player.transform.position = new Vector3(x, y, 0);
-
     }
 
     public void GameExit()

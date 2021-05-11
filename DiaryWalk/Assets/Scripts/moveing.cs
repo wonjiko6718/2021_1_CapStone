@@ -42,7 +42,6 @@ public class moveing : MonoBehaviour
         Jump();
         crouch();
         Ani();
-        Debug.Log(cancrouch);
     }
     
     void FixedUpdate()

@@ -1948,7 +1948,7 @@ MonoBehaviour:
   diaryimage: {fileID: 0}
   keyimage: {fileID: 0}
   menuSet: {fileID: 1173212270}
-  player: {fileID: 0}
+  player: {fileID: 1766823143}
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3079,6 +3079,51 @@ PrefabInstance:
       objectReference: {fileID: 1809360779}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbbcc9094e695654ea22e0262ab5b91a, type: 3}
+--- !u!1 &960931578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 960931580}
+  - component: {fileID: 960931579}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &960931579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960931578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f368cadc0b04d6840beb9d419daebc33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuSet: {fileID: 1173212270}
+  player: {fileID: 1766823143}
+--- !u!4 &960931580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960931578}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 192.21579, y: 119.116425, z: -51.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 52
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &975302723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3354,7 +3399,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 999631156}
+      - m_Target: {fileID: 960931579}
         m_MethodName: GameSave
         m_Mode: 1
         m_Arguments:
@@ -5403,8 +5448,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1433968956}
-        m_MethodName: GameExit
+      - m_Target: {fileID: 960931579}
+        m_MethodName: GameQuit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6638,9 +6683,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1173212270}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 960931579}
+        m_MethodName: GameContinue
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
