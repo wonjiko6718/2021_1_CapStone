@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class gamemanager : MonoBehaviour
@@ -47,6 +48,9 @@ public class gamemanager : MonoBehaviour
 
         player.transform.position = new Vector3(x, y, 1);
 
+    }
+    public void MainMenu() {
+        SceneManager.LoadScene("Title");
     }
     public void GameContinue() {
         menuSet.SetActive(false);
