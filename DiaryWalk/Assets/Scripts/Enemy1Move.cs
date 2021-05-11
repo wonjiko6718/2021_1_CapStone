@@ -15,6 +15,7 @@ public class Enemy1Move : MonoBehaviour
     float contactDistance = 1f;
     bool follow = false;
     string dist = "";
+    public int targetDirection;
 
     void Start()
     {
@@ -30,6 +31,18 @@ public class Enemy1Move : MonoBehaviour
 
     void FollowTarget()
     {
+        float PlayerX = target.transform.position.x; // Player Position X
+        float MosterX = this.transform.position.x; // Monster Position X
+        float DirCirculate = MosterX-PlayerX; // Moster Postion X - Player Position X
+        if(DirCirculate >= 0)
+        {
+            targetDirection = 0; // Left Direction
+        }
+        else
+        {
+            targetDirection = 1; // Right Direction
+        }
+
         if (Vector2.Distance(transform.position, target.position) > contactDistance && follow)
             transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime * 0.4f);
 
