@@ -21,6 +21,7 @@ public class scoremanager : MonoBehaviour {
 
     void Start()
     {
+        GameLoad();
 
     }
 
@@ -28,7 +29,16 @@ public class scoremanager : MonoBehaviour {
     void Awake() {
     scoremanager.instance = this; //싱글톤 부여
     }
-    void Update() {  
+    void Update()
+    {
+        if (Input.GetButtonDown("Cancel"))
+        {   //서브메뉴
+            if (menuSet.activeSelf)
+                menuSet.SetActive(false);
+            else
+                menuSet.SetActive(true);
+        }
+            
     }
 
     void FixedUpdate() { //게임 내내 실행되야 하므로 Update에 작성함
@@ -38,18 +48,14 @@ public class scoremanager : MonoBehaviour {
             timer2=0; //다시 0으로 초기화(Update는 계속 실행되므로 for이나 while 쓸필요 X)
         }
     }
-
-    public void changecontents(int value) {
-        if (value ==1) {
-            messagecontents=("Diary를 총 " + diarycount.ToString() +"개 획득하였습니다.");
-        }
-        if (value ==2) {
-            messagecontents=("열쇠를 획득하였습니다.");
-        }
-        if (value ==3) {
-            messagecontents=("열쇠를 사용하였습니다.");
-        }
-
+    public void changecontentsdiaryget() {
+        messagecontents=("Diary를 총 " + diarycount.ToString() +"개 획득하였습니다.");
+    }
+    public void changecontentskeyget(string name) {
+        messagecontents=(name+"를 획득하였습니다.");
+    }
+    public void changecontentskeyuse(string name) {
+        messagecontents=(name+"를 사용하였습니다.");
     }
 
     public void setmessageAlpha(int value) {
@@ -82,7 +88,27 @@ public class scoremanager : MonoBehaviour {
         GUIStyle message = new GUIStyle(GUI.skin.label); //message 이름으로 GUI설정값들을 모아놓는 GUIStyle 선언
         message.fontSize = 36;
         message.normal.textColor=new Color(1,1,1,messagealpha);
-        GUI.Label (new Rect (0,40,1000,300), messagecontents, message);
+        GUI.Label (new Rect (0,500,1000,300), messagecontents, message);
+    }
+    public void GameSave()
+    {
+        PlayerPrefs.SetFloat("PlayerX", player.transform.position.x);
+        PlayerPrefs.SetFloat("PlayerY", player.transform.position.y);
+        PlayerPrefs.Save();
+
+
+    }
+
+    public void GameLoad()
+    {
+        if (!PlayerPrefs.HasKey("PlayerX"))
+            return;
+
+        float x = PlayerPrefs.GetFloat("PlayerX");
+        float y = PlayerPrefs.GetFloat("PlayerY");
+
+        player.transform.position = new Vector3(x, y, 0);
+
     }
 
     public void GameExit()

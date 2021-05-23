@@ -8,8 +8,6 @@ public class Button : MonoBehaviour {
     public GameObject[] buttontemp;
     public Image diaryimage;
     public Image keyimage;
-
-
     public static Button instance; //싱글톤 선언
     void Awake(){
     Button.instance = this; //싱글톤 부여
