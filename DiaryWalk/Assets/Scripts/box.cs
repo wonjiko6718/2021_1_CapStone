@@ -7,9 +7,6 @@ public class box : MonoBehaviour {
     public GameObject item1;
     public GameObject item2;
     public GameObject item3;
-    public GameObject tempitem1;
-    public GameObject tempitem2;
-    public GameObject tempitem3;
     public bool isbox = false;
     public bool boxused = false;
     public string keyname = "";
@@ -22,7 +19,6 @@ public class box : MonoBehaviour {
         if (this.gameObject.name=="1층박스")
         keyname="학생회실 열쇠";
         thisGO = GameObject.Find(this.gameObject.name);
-        tempitem1 = item1;
     }
    
     void OnTriggerEnter2D (Collider2D other) {
@@ -36,7 +32,7 @@ public class box : MonoBehaviour {
 		  }
     }
     void toinventory() {
-		GameObject.Find("Player").GetComponent<Inventory>().inventoryadd(tempitem1); //아직 첫번째 아이템 넘기는 것만 구현 None이 아닐시 다음것도 넘기도록 if문 구현예정
+		GameObject.Find("Player").GetComponent<Inventory>().inventoryadd(item1); //아직 첫번째 아이템 넘기는 것만 구현 None이 아닐시 다음것도 넘기도록 if문 구현예정
 	}
 
     public void boxinteract() {
