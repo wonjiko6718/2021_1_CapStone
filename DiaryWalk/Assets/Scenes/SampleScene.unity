@@ -3284,7 +3284,7 @@ GameObject:
   - component: {fileID: 986470916}
   - component: {fileID: 986470915}
   - component: {fileID: 986470914}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: eye
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -5607,6 +5607,7 @@ MonoBehaviour:
   Enemy1: {fileID: 0}
   Player: {fileID: 0}
   targetDirection: 0
+  tp: 0
 --- !u!58 &1464211257
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7149,9 +7150,6 @@ MonoBehaviour:
   item1: {fileID: 387640861}
   item2: {fileID: 0}
   item3: {fileID: 0}
-  tempitem1: {fileID: 0}
-  tempitem2: {fileID: 0}
-  tempitem3: {fileID: 0}
   isbox: 0
   boxused: 0
   keyname: 
@@ -7905,7 +7903,7 @@ PrefabInstance:
     - target: {fileID: 6147591575685930911, guid: 145d124b477f45846b49d1d9347f18dd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.12
+      value: 26.56
       objectReference: {fileID: 0}
     - target: {fileID: 6147591575685930911, guid: 145d124b477f45846b49d1d9347f18dd,
         type: 3}

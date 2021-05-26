@@ -16,6 +16,8 @@ public class Enemy1Move : MonoBehaviour
     bool follow = false;
     public int targetDirection;
     private Vector3 movement;
+    public int tp;
+    public static bool isTeleport = false;
 
     void Start()
     {
@@ -25,8 +27,14 @@ public class Enemy1Move : MonoBehaviour
 
     void Update()
     {
+        if (isTeleport == false) return;
+        if (gameObject.tag == "Enemy_1")
+        {
+            transform.position = getPosition();
+        }
         FollowTarget();
     }
+
 
     void FollowTarget()
     {
@@ -81,8 +89,6 @@ public class Enemy1Move : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         Invoke("Think", 3);
-        
-
     }
 
 
@@ -101,6 +107,23 @@ public class Enemy1Move : MonoBehaviour
         Invoke("Think", 3);
         if (nextMove != 0)
             spriteRenderer.flipX = nextMove == -1;
+    }
+
+    private Vector3 getPosition()
+    {
+        int tp = Random.Range(0, 4);
+        return new Vector3(12, (tp * 12 - 4), 0);
+    }
+
+    void OnBecameInvisible()
+    { 
+        isTeleport = true;
+    }
+
+    void OnBecameVisible()
+    {
+        
+        isTeleport = false;
     }
 
 }
