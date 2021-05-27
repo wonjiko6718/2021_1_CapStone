@@ -14,10 +14,11 @@ public class door : MonoBehaviour {
     private Transform InTarget_Trans;
     private Transform OutTarget_Trans;
 
+    public GameObject needkey; // 문을 여는 데 필요한 열쇠
+
     SpriteRenderer olddoor;
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         InTarget_Trans = GetComponent<Transform>();
         OutTarget_Trans = GetComponent<Transform>();
 
@@ -26,13 +27,11 @@ public class door : MonoBehaviour {
         OutTarget_Trans = OutTarget.transform;
     }
     public static door instance; //싱글톤 선언
-    void Awake()
-    {
+    void Awake() {
     door.instance = this; //싱글톤 부여
     }
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         
     }
     void OnTriggerEnter2D (Collider2D other) {
@@ -54,16 +53,18 @@ public class door : MonoBehaviour {
       olddoor = this.gameObject.GetComponent<SpriteRenderer>();
         olddoor.sprite = olddoorSprite;
     }
-    void OnTriggerStay2D(Collider2D other)
-    {
+    void OnTriggerStay2D(Collider2D other) {
         if(other.tag == "Player" && Input.GetKeyDown(KeyCode.E)) // Player Push Portal
         {
             PlayerTarget = other.gameObject; // Get Player
             UsePortal();
         }
     }
-    void UsePortal()
-    {
-        PlayerTarget.transform.SetPositionAndRotation(OutTarget_Trans.position,new Quaternion(0.0f,0.0f,0.0f,0.0f));
+    void UsePortal() {
+        for(int i=0;i<20;i++){
+            if(Inventory.instance.items[i].name==needkey.name){
+                PlayerTarget.transform.SetPositionAndRotation(OutTarget_Trans.position,new Quaternion(0.0f,0.0f,0.0f,0.0f));
+            }
+        }
     }
 }
