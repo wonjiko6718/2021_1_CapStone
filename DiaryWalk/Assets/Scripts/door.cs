@@ -61,10 +61,17 @@ public class door : MonoBehaviour {
         }
     }
     void UsePortal() {
-        for(int i=0;i<20;i++){
+        if(needkey.gameObject == null)
+        {
+            PlayerTarget.transform.SetPositionAndRotation(OutTarget_Trans.position,new Quaternion(0.0f,0.0f,0.0f,0.0f));
+        }
+        else
+        {
+            for(int i=0;i<20;i++){
             if(Inventory.instance.items[i].name==needkey.name){
                 PlayerTarget.transform.SetPositionAndRotation(OutTarget_Trans.position,new Quaternion(0.0f,0.0f,0.0f,0.0f));
             }
+        }
         }
     }
 }
