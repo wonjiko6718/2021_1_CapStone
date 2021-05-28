@@ -18,9 +18,11 @@ public class Button : MonoBehaviour {
     }
     public void ChangeImageToDiary(int value) {
         buttontemp[value].GetComponent<Image>().sprite=diaryimage.sprite; //배열에 넣은 오브젝트의 이미지 컴포넌트의 스프라이트를 선언한 이미지의 스프라이트로 바꿈
+        buttontemp[value].GetComponent<Image>().color=new Color(255,255,255,1);
     }
     public void ChangeImageToKey(int value) {
         buttontemp[value].GetComponent<Image>().sprite=keyimage.sprite;
+        buttontemp[value].GetComponent<Image>().color=new Color(255,255,255,1);
     }
 
     void Update()
