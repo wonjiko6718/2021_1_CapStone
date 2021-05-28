@@ -52,13 +52,11 @@ public class moveing : MonoBehaviour
         if(Mathf.Abs(rigid.velocity.x) > 0 || Mathf.Abs(rigid.velocity.y) > 0)
         {
             Recoverystamina=0;
-            Debug.Log("스태미나가 회복을 멈추고 있습니다.");
         }
 
         if(Input.GetKey(KeyCode.LeftShift) && stamina > 0 && Mathf.Abs(rigid.velocity.x) > 0)
         {
             stamina -= 0.4f;
-            Debug.Log("스태미나가 0.4씩 감소되고있습니다");
             Debug.Log(stamina);
         }
 
@@ -73,7 +71,7 @@ public class moveing : MonoBehaviour
     {
         
         //적에게 닿았을때 
-        if(other.gameObject.tag == "rumor" && playerHit == false) 
+        if(other.gameObject.tag == "Enemy" && playerHit == false && Mathf.Abs(this.gameObject.transform.position.x - other.gameObject.transform.position.x) <= 1.75) 
         {
             OnDamaged(other.transform.position);
             Debug.Log("Hit!");
@@ -171,7 +169,7 @@ public class moveing : MonoBehaviour
         ani.SetBool("isWalk", true);
         }
 
-        if(Input.GetKeyDown(KeyCode.LeftShift)) 
+        if(Input.GetKeyDown(KeyCode.LeftShift) && stamina >0) 
         {
             ani.SetBool("isRunning", true);
             ani.SetBool("isWalk", false);
@@ -196,7 +194,7 @@ public class moveing : MonoBehaviour
         if(canWalk == true)
         {
             rigid.velocity = new Vector2(h * runspeed , rigid.velocity.y);
-            if(Input.GetKey(KeyCode.LeftShift)) // 뛰기
+            if(Input.GetKey(KeyCode.LeftShift) && stamina > 0) // 뛰기
             {
                 if(rigid.velocity.y != 0) // 공중 행동중일 경우
                 {
