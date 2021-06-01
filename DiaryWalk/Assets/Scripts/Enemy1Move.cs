@@ -16,6 +16,7 @@ public class Enemy1Move : MonoBehaviour
     bool follow = false;
     public int targetDirection;
     private Vector3 movement;
+    public int tp;
 
     void Start()
     {
@@ -81,8 +82,6 @@ public class Enemy1Move : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         Invoke("Think", 3);
-        
-
     }
 
 
@@ -91,6 +90,25 @@ public class Enemy1Move : MonoBehaviour
     {
         rigid.velocity = new Vector2(nextMove, rigid.velocity.y);
 
+    }
+
+    private Vector3 getPosition()
+    {
+        int tp = Random.Range(0, 4);
+        return new Vector3(12, (tp * 12 - 4), 0);
+    }
+
+    void teleport()
+    {
+        transform.position = getPosition();
+    }
+
+    void OnBecameInvisible()
+    {
+        if(enabled == true)
+        {
+            Invoke("teleport", 10f);
+        }
     }
 
 
