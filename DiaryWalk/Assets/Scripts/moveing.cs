@@ -124,6 +124,8 @@ public class moveing : MonoBehaviour
         rigid.AddForce(new Vector2(dirc,1) * 2 , ForceMode2D.Impulse);
         ani.SetTrigger("doDamaged");
         Invoke("OffDamaged", 0.5f);
+        AudioSource hitsounds = GameObject.Find("hitsound").GetComponent<AudioSource>();
+        hitsounds.Play();
     }
 
     void OffDamaged() // 넉백 후 원상태
@@ -230,6 +232,8 @@ public class moveing : MonoBehaviour
             canjump = false;
             canWalk = false;
             ani.SetBool("isCrouch", true);
+            AudioSource crouchsounds = GameObject.Find("crouchsound").GetComponent<AudioSource>();
+            crouchsounds.Play();
         }
 
         else if(Input.GetButtonUp("Crouch") && cancrouch == true)
@@ -239,6 +243,8 @@ public class moveing : MonoBehaviour
             canjump = true;
             PlayerCC2D.size = new Vector3(0.6f,2.0f,2.0f);
             ani.SetBool("isCrouch", false);
+            AudioSource crouchsounds = GameObject.Find("crouchsound").GetComponent<AudioSource>();
+            crouchsounds.Stop();
         }
     }
 
@@ -248,6 +254,8 @@ public class moveing : MonoBehaviour
         {
             gameObject.SetActive(false);
             Debug.Log("죽었습니다.");
+            AudioSource diesounds = GameObject.Find("diesound").GetComponent<AudioSource>();
+            diesounds.Play();
         }
     }
 

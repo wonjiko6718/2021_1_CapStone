@@ -33,6 +33,8 @@ public class EnemyMove : MonoBehaviour
         {
             anim.SetTrigger("Screaming");
             Destroy(gameObject, .60f);
+            AudioSource enemysounds = GameObject.Find("enemysound").GetComponent<AudioSource>();
+            enemysounds.Play();
         }
     }
 
