@@ -18,6 +18,7 @@ public class Inventory : MonoBehaviour
     }
     public void inventoryadd(GameObject a) {
         items[count] = a;
+        gamemanager.itemname[count] = a.name;
         count+=1;
     }
 }

@@ -21,8 +21,6 @@ public class scoremanager : MonoBehaviour {
 
     void Start()
     {
-        GameLoad();
-
     }
 
 
@@ -89,30 +87,5 @@ public class scoremanager : MonoBehaviour {
         message.fontSize = 36;
         message.normal.textColor=new Color(1,1,1,messagealpha);
         GUI.Label (new Rect (0,500,1000,300), messagecontents, message);
-    }
-    public void GameSave()
-    {
-        PlayerPrefs.SetFloat("PlayerX", player.transform.position.x);
-        PlayerPrefs.SetFloat("PlayerY", player.transform.position.y);
-        PlayerPrefs.Save();
-
-
-    }
-
-    public void GameLoad()
-    {
-        if (!PlayerPrefs.HasKey("PlayerX"))
-            return;
-
-        float x = PlayerPrefs.GetFloat("PlayerX");
-        float y = PlayerPrefs.GetFloat("PlayerY");
-
-        player.transform.position = new Vector3(x, y, 0);
-
-    }
-
-    public void GameExit()
-    {
-        Application.Quit();
     }
 }

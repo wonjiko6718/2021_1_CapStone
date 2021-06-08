@@ -7,15 +7,18 @@ ScriptsOnlyBuild:
     - Enemy1Move
     - EnemyMove
     - HPbar
+    - Inventory
     - InventoryUI
     - SceneChanger
     - Staminabar
+    - box
     - diary
     - door
-    - eye
     - fabrication
     - gamemanager
+    - itemdescription
     - key
+    - keydiaryscore
     - moveing
     - rumor
     - scoremanager
@@ -95,11 +98,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10164}
     - Class: 114
-      Script: {instanceID: 10172}
+      Script: {instanceID: 10192}
     - Class: 114
-      Script: {instanceID: 10256}
+      Script: {instanceID: 10258}
     - Class: 114
-      Script: {instanceID: 10268}
+      Script: {instanceID: 10270}
     - Class: 114
       Script: {instanceID: 10430}
     - Class: 114
@@ -109,31 +112,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10622}
     - Class: 114
-      Script: {instanceID: 10788}
+      Script: {instanceID: 10626}
     - Class: 114
-      Script: {instanceID: 10856}
+      Script: {instanceID: 10790}
     - Class: 114
-      Script: {instanceID: 10942}
+      Script: {instanceID: 10858}
     - Class: 114
-      Script: {instanceID: 10956}
+      Script: {instanceID: 10918}
     - Class: 114
-      Script: {instanceID: 10962}
+      Script: {instanceID: 10946}
     - Class: 114
-      Script: {instanceID: 11038}
+      Script: {instanceID: 10960}
     - Class: 114
-      Script: {instanceID: 11088}
+      Script: {instanceID: 10966}
     - Class: 114
-      Script: {instanceID: 11142}
+      Script: {instanceID: 11042}
     - Class: 114
-      Script: {instanceID: 11254}
+      Script: {instanceID: 11092}
     - Class: 114
-      Script: {instanceID: 11448}
+      Script: {instanceID: 11146}
     - Class: 114
-      Script: {instanceID: 11480}
+      Script: {instanceID: 11258}
     - Class: 114
-      Script: {instanceID: 11494}
+      Script: {instanceID: 11352}
     - Class: 114
-      Script: {instanceID: 13430}
+      Script: {instanceID: 11454}
+    - Class: 114
+      Script: {instanceID: 11486}
+    - Class: 114
+      Script: {instanceID: 11500}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -170,24 +177,22 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9674}
     - Class: 114
-      Script: {instanceID: 9832}
-    - Class: 114
       Script: {instanceID: 9872}
     - Class: 114
-      Script: {instanceID: 10256}
+      Script: {instanceID: 10258}
     - Class: 114
-      Script: {instanceID: 10300}
+      Script: {instanceID: 10302}
     - Class: 114
       Script: {instanceID: 10612}
     - Class: 114
-      Script: {instanceID: 11088}
+      Script: {instanceID: 11092}
     - Class: 114
-      Script: {instanceID: 11404}
+      Script: {instanceID: 11146}
     - Class: 114
-      Script: {instanceID: 11448}
+      Script: {instanceID: 11410}
+    - Class: 114
+      Script: {instanceID: 11454}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -384,6 +389,12 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 24df6003bb174d8d2eaf91fe0a6c9e86
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: box
+  - hash:
+      serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -396,7 +407,7 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 1e3dd12658c9d1f6d7f551c8d2c08799
+      Hash: b0cb2beb0759c4cad167b12cea9a3206
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: door
@@ -486,6 +497,12 @@ ScriptsOnlyBuild:
     className: Camera_move
   - hash:
       serializedVersion: 2
+      Hash: a9e1733d6c14601932097a2f94aedd1a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: keydiaryscore
+  - hash:
+      serializedVersion: 2
       Hash: feb9a5a121d15fa3654d4e50a5233045
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -564,6 +581,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: da89b8b46ca1a3d37615d2e40a86127a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Inventory
+  - hash:
+      serializedVersion: 2
       Hash: b29d70c4c90670b7ff2331b4fd6282d7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -576,7 +599,7 @@ ScriptsOnlyBuild:
     className: rumor
   - hash:
       serializedVersion: 2
-      Hash: 1504f200a3fa7b09fd8f90cf61b91009
+      Hash: a83ab7dc22b87fcc61eb472322df5366
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy1Move
@@ -646,6 +669,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Hit
+  - hash:
+      serializedVersion: 2
+      Hash: 2393c87c15bfe070127fa319e3bff149
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: itemdescription
   - hash:
       serializedVersion: 2
       Hash: df434544c9f7b33d1cc7e635b180d279
@@ -758,4 +787,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Title.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: "C:/Users/JuYongWoo/Desktop/\uB531\uB530\uAD6C\uB9AC/unity_ex.exe"
+  playerPath: "C:/Users/JuYongWoo/Desktop/\uB098\uBB34\uBC1C\uBC1C\uC774/unity_ex.exe"
