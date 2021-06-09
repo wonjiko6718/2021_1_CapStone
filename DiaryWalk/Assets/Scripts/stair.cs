@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class door : MonoBehaviour {
+public class stair : MonoBehaviour
+{
     public Sprite newdoorSprite;
     public Sprite olddoorSprite;
-
     public GameObject InTarget; // In Portal
     public GameObject OutTarget; // out Portal
     
@@ -14,11 +14,10 @@ public class door : MonoBehaviour {
     public Transform InTarget_Trans;
     public Transform OutTarget_Trans;
 
-    public GameObject needkey; // 문을 여는 데 필요한 열쇠
-
     SpriteRenderer olddoor;
     // Start is called before the first frame update
-    void Start() {
+    void Start()
+    {
         InTarget_Trans = GetComponent<Transform>();
         OutTarget_Trans = GetComponent<Transform>();
 
@@ -26,11 +25,19 @@ public class door : MonoBehaviour {
         InTarget_Trans = InTarget.transform;
         OutTarget_Trans = OutTarget.transform;
     }
-    void Awake() {
-    }
+
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
         
+    }
+
+    void OnTriggerStay2D(Collider2D other) {
+        if(other.tag == "Player" && Input.GetKeyDown(KeyCode.E)) // Player Push Portal
+        {
+            PlayerTarget = other.gameObject; // Get Player
+            PlayerTarget.transform.SetPositionAndRotation(OutTarget_Trans.position,new Quaternion(0.0f,0.0f,0.0f,0.0f));
+        }
     }
     void OnTriggerEnter2D (Collider2D other) {
 		if (other.gameObject.tag=="Player") {
@@ -50,23 +57,5 @@ public class door : MonoBehaviour {
     void changedoorspriteback() {
       olddoor = this.gameObject.GetComponent<SpriteRenderer>();
         olddoor.sprite = olddoorSprite;
-    }
-
-
-
-    
-    void OnTriggerStay2D(Collider2D other) {
-        if(other.tag == "Player" && Input.GetKeyDown(KeyCode.E)) // Player Push Portal
-        {
-            PlayerTarget = other.gameObject; // Get Player
-            UsePortal();
-        }
-    }
-    void UsePortal() {
-            for(int i=0;i<20;i++){
-            if(GameObject.Find("Player").GetComponent<Inventory>().items[i].name==needkey.name){
-                PlayerTarget.transform.SetPositionAndRotation(OutTarget_Trans.position,new Quaternion(0.0f,0.0f,0.0f,0.0f));
-            }
-        }
     }
 }

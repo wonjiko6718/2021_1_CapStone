@@ -22,14 +22,18 @@ ScriptsOnlyBuild:
     - moveing
     - rumor
     - scoremanager
+    - stair
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -140,6 +144,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11486}
     - Class: 114
       Script: {instanceID: 11500}
+    - Class: 114
+      Script: {instanceID: 72422}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -406,7 +412,7 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: b0cb2beb0759c4cad167b12cea9a3206
+      Hash: b1efb02e528b7430f8d67eb9edb067f3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: door
@@ -616,12 +622,6 @@ ScriptsOnlyBuild:
     className: HPbar
   - hash:
       serializedVersion: 2
-      Hash: 6b3bd607f635da826889a433feda9e79
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: dodo
-  - hash:
-      serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -782,8 +782,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 472c77c79385e35e42447285f8dbd677
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: stair
   platform: 5
   scenePathNames:
   - Assets/Scenes/Title.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: "C:/Users/JuYongWoo/Desktop/\uB098\uBB34\uBC1C\uBC1C\uC774/unity_ex.exe"
+  playerPath: "C:/Users/JuYongWoo/Desktop/\uBE4C\uB4DC\uC2DC\uB3C4/unity_ex.exe"
