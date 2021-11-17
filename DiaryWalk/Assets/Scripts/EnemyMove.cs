@@ -10,6 +10,7 @@ public class EnemyMove : MonoBehaviour
     public GameObject Enemy;
     public GameObject Player;
     SpriteRenderer spriteRenderer;
+    public GameObject Blood;
 
     void Awake()
     {
@@ -33,6 +34,7 @@ public class EnemyMove : MonoBehaviour
         {
             anim.SetTrigger("Screaming");
             Destroy(gameObject, .60f);
+            Instantiate(Blood, this.transform.position, this.transform.rotation);
             AudioSource enemysounds = GameObject.Find("enemysound").GetComponent<AudioSource>();
             enemysounds.Play();
         }

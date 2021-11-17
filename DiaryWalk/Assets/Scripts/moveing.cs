@@ -23,6 +23,7 @@ public class moveing : MonoBehaviour
     Animator ani;
     Transform PlayerTrans;
     CapsuleCollider2D PlayerCC2D;
+    public GameObject Blood;
    
 
 
@@ -123,6 +124,8 @@ public class moveing : MonoBehaviour
         int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;
         rigid.AddForce(new Vector2(dirc,1) * 2 , ForceMode2D.Impulse);
         ani.SetTrigger("doDamaged");
+        Instantiate(Blood, this.transform.position, this.transform.rotation);
+
         Invoke("OffDamaged", 0.5f);
         AudioSource hitsounds = GameObject.Find("hitsound").GetComponent<AudioSource>();
         hitsounds.Play();
