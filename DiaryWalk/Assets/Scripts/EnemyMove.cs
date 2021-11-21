@@ -33,10 +33,11 @@ public class EnemyMove : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             anim.SetTrigger("Screaming");
-            Destroy(gameObject, .60f);
-            Instantiate(Blood, this.transform.position, this.transform.rotation);
+                        
             AudioSource enemysounds = GameObject.Find("enemysound").GetComponent<AudioSource>();
             enemysounds.Play();
+            StartCoroutine(motionBombStart());
+
         }
     }
 
@@ -49,5 +50,15 @@ public class EnemyMove : MonoBehaviour
         if(nextMove != 0)
         spriteRenderer.flipX = nextMove == -1;
     }
+    IEnumerator motionBombStart()
+    {
+        yield return new WaitForSeconds(0.5f); //0.5초 후 타격이펙트 생성
+        this.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0); //잠시 투명
+        Instantiate(Blood, this.transform.position, this.transform.rotation); //타격이펙트 소환
+
+        yield return new WaitForSeconds(0.5f); //0.5초 대기
+        Destroy(this); //자신을 Destroy하여 메모리 확보
+    }
+
 
 }

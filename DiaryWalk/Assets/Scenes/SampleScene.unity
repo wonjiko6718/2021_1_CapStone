@@ -6949,6 +6949,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6147591575685930906, guid: 145d124b477f45846b49d1d9347f18dd,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6147591575685930910, guid: 145d124b477f45846b49d1d9347f18dd,
         type: 3}
       propertyPath: Blood
