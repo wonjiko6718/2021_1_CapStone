@@ -34,16 +34,20 @@ public class Enemy1Move : MonoBehaviour
             randomMove();
         }
 
-        if (this.rigid.velocity.x > 0.01f)
+        if (this.rigid.velocity.x > 0.001f) //실시간으로 애니메이션 속도 최신화
         {
-            anim.SetFloat("MoveSpeed", this.rigid.velocity.x * 50);
+            anim.SetFloat("MoveSpeed", this.rigid.velocity.x * 100);
             spriteRenderer.flipX = false;
         }
-        else if (this.rigid.velocity.x < -0.01f)
+        else if (this.rigid.velocity.x < -0.001f)
         {
-            anim.SetFloat("MoveSpeed", -this.rigid.velocity.x*50);
+            anim.SetFloat("MoveSpeed", -this.rigid.velocity.x*100);
             spriteRenderer.flipX = true;
 
+        }
+        else
+        {
+            anim.SetFloat("MoveSpeed", 0);
         }
 
     }
@@ -85,6 +89,14 @@ public class Enemy1Move : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject == Player)
+        {
+            anim.SetBool("Chasing", false);
+        }
+    }
+
     void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject == Player)
@@ -92,6 +104,7 @@ public class Enemy1Move : MonoBehaviour
             anim.SetBool("Chasing", false);
         }
     }
+
 
     void Awake()
     {

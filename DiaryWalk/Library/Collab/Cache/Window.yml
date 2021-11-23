@@ -13,8 +13,757 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
-    m_Keys: []
-    m_Values: 
+    m_Keys:
+    - .collabignore
+    - Assets/Animation.meta
+    - Assets/Animation/Jump.anim
+    - Assets/Animation/Jump.anim.meta
+    - Assets/Animation/Player 1.controller
+    - Assets/Animation/Player 1.controller.meta
+    - Assets/Animation/Player.controller
+    - Assets/Animation/Player.controller.meta
+    - Assets/Animation/Run.anim
+    - Assets/Animation/Run.anim.meta
+    - Assets/Animation/Stop.anim
+    - Assets/Animation/Stop.anim.meta
+    - Assets/Animation/Walk.anim
+    - Assets/Animation/Walk.anim.meta
+    - Assets/Animation/crouch.anim
+    - Assets/Animation/crouch.anim.meta
+    - Assets/Animation/ldle.anim
+    - Assets/Animation/ldle.anim.meta
+    - Assets/Animation/rumor.controller
+    - Assets/Animation/rumor.controller.meta
+    - Assets/Animation/rumor_move.anim
+    - Assets/Animation/rumor_move.anim.meta
+    - Assets/Animation/sit.anim
+    - Assets/Animation/sit.anim.meta
+    - Assets/Camera_move.cs
+    - Assets/Camera_move.cs.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX1.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX1.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX10.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX10.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX10_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX10_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX11.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX11.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX11_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX11_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX12.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX12.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX12_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX12_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX13.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX13.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX13_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX13_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX14.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX14.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX14_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX14_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX15.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX15.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX15_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX15_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX16.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX16.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX16_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX16_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX17.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX17.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX17_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX17_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX18.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX18.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX18_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX18_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX19.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX19.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX19_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX19_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX1_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX1_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX2.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX2.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX20.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX20.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX20_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX20_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX21.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX21.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX21_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX21_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX22.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX22.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX22_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX22_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX23.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX23.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX23_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX23_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX24.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX24.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX24_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX24_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX25.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX25.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX25_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX25_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX26.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX26.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX26_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX26_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX27.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX27.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX27_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX27_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX28.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX28.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX28_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX28_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX29.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX29.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX29_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX29_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX2_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX2_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX3.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX3.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX30.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX30.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX30_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX30_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX31.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX31.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX31_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX31_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX32.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX32.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX32_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX32_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX33.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX33.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX33_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX33_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX34.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX34.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX34_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX34_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX35.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX35.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX35_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX35_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX36.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX36.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX36_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX36_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX37.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX37.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX37_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX37_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX38.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX38.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX38_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX38_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX39.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX39.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX39_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX39_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX3_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX3_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX4.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX4.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX40.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX40.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX40_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX40_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX41.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX41.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX41_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX41_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX42.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX42.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX42_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX42_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX43.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX43.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX43_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX43_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX44.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX44.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX44_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX44_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX4_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX4_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX5.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX5.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX5_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX5_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX6.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX6.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX6_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX6_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX7.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX7.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX7_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX7_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX8.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX8.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX8_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX8_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX9.anim
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX9.anim.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX9_0.controller
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Animations/CartoonBloodFX9_0.controller.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Materials.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Materials/Back.mat
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Materials/Back.mat.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX10_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX10_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX11_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX11_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX12_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX12_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX13_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX13_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX14_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX14_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX15_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX15_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX16_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX16_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX17_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX17_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX18_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX18_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX19_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX19_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX1_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX1_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX20_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX20_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX21_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX21_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX22_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX22_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX23_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX23_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX24_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX24_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX25_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX25_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX26_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX26_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX27_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX27_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX28_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX28_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX29_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX29_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX2_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX2_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX30_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX30_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX31_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX31_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX32_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX32_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX33_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX33_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX34_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX34_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX35_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX35_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX36_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX36_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX37_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX37_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX38_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX38_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX39_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX39_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX3_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX3_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX40_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX40_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX41_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX41_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX42_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX42_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX43_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX43_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX44_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX44_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX4_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX4_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX5_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX5_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX6_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX6_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX7_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX7_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX8_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX8_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX9_0.prefab
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Prefabs/CartoonBloodFX9_0.prefab.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Scenes.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Scenes/SampleScene.unity
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Scenes/SampleScene.unity.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX1.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX1.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX10.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX10.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX11.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX11.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX12.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX12.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX13.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX13.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX14.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX14.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX15.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX15.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX16.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX16.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX17.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX17.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX18.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX18.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX19.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX19.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX2.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX2.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX20.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX20.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX21.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX21.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX22.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX22.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX23.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX23.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX24.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX24.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX25.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX25.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX26.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX26.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX27.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX27.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX28.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX28.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX29.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX29.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX3.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX3.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX30.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX30.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX31.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX31.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX32.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX32.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX33.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX33.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX34.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX34.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX35.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX35.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX36.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX36.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX37.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX37.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX38.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX38.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX39.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX39.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX4.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX4.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX40.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX40.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX41.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX41.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX42.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX42.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX43.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX43.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX44.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX44.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX5.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX5.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX6.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX6.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX7.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX7.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX8.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX8.png.meta
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX9.png
+    - Assets/Cartoon Blood Effects Burst Splat Splash FX/Sprites/CartoonBloodFX9.png.meta
+    - Assets/Essential_Horror_Music.meta
+    - Assets/Essential_Horror_Music/01_Ominous_Dream.ogg
+    - Assets/Essential_Horror_Music/01_Ominous_Dream.ogg.meta
+    - Assets/Essential_Horror_Music/01_Ominous_Dream.wav
+    - Assets/Essential_Horror_Music/01_Ominous_Dream.wav.meta
+    - Assets/Essential_Horror_Music/01_Ominous_Dream_1min.mp3
+    - Assets/Essential_Horror_Music/01_Ominous_Dream_1min.mp3.meta
+    - Assets/Essential_Horror_Music/01_Ominous_Dream_4min.mp3
+    - Assets/Essential_Horror_Music/01_Ominous_Dream_4min.mp3.meta
+    - Assets/Essential_Horror_Music/02_JINGLE_Sinister_Moon.mp3
+    - Assets/Essential_Horror_Music/02_JINGLE_Sinister_Moon.mp3.meta
+    - Assets/Essential_Horror_Music/02_JINGLE_Sinister_Moon.ogg
+    - Assets/Essential_Horror_Music/02_JINGLE_Sinister_Moon.ogg.meta
+    - Assets/Essential_Horror_Music/02_JINGLE_Sinister_Moon.wav
+    - Assets/Essential_Horror_Music/02_JINGLE_Sinister_Moon.wav.meta
+    - Assets/Essential_Horror_Music/03_Creeping_Darkness.ogg
+    - Assets/Essential_Horror_Music/03_Creeping_Darkness.ogg.meta
+    - Assets/Essential_Horror_Music/03_Creeping_Darkness.wav
+    - Assets/Essential_Horror_Music/03_Creeping_Darkness.wav.meta
+    - Assets/Essential_Horror_Music/03_Creeping_Darkness_1min.mp3
+    - Assets/Essential_Horror_Music/03_Creeping_Darkness_1min.mp3.meta
+    - Assets/Essential_Horror_Music/03_Creeping_Darkness_4min.mp3
+    - Assets/Essential_Horror_Music/03_Creeping_Darkness_4min.mp3.meta
+    - Assets/Essential_Horror_Music/04_Phantom_Pressure_no_clock.ogg
+    - Assets/Essential_Horror_Music/04_Phantom_Pressure_no_clock.ogg.meta
+    - Assets/Essential_Horror_Music/04_Phantom_Pressure_no_clock.wav
+    - Assets/Essential_Horror_Music/04_Phantom_Pressure_no_clock.wav.meta
+    - Assets/Essential_Horror_Music/04_Phantom_Pressure_no_clock_1min.mp3
+    - Assets/Essential_Horror_Music/04_Phantom_Pressure_no_clock_1min.mp3.meta
+    - Assets/Essential_Horror_Music/04_Phantom_Pressure_no_clock__4min.mp3
+    - Assets/Essential_Horror_Music/04_Phantom_Pressure_no_clock__4min.mp3.meta
+    - Assets/Essential_Horror_Music/05_Phantom_Pressure.ogg
+    - Assets/Essential_Horror_Music/05_Phantom_Pressure.ogg.meta
+    - Assets/Essential_Horror_Music/05_Phantom_Pressure.wav
+    - Assets/Essential_Horror_Music/05_Phantom_Pressure.wav.meta
+    - Assets/Essential_Horror_Music/05_Phantom_Pressure_1min.mp3
+    - Assets/Essential_Horror_Music/05_Phantom_Pressure_1min.mp3.meta
+    - Assets/Essential_Horror_Music/05_Phantom_Pressure_4min.mp3
+    - Assets/Essential_Horror_Music/05_Phantom_Pressure_4min.mp3.meta
+    - Assets/Essential_Horror_Music/06_Nest_of_Darkness.ogg
+    - Assets/Essential_Horror_Music/06_Nest_of_Darkness.ogg.meta
+    - Assets/Essential_Horror_Music/06_Nest_of_Darkness.wav
+    - Assets/Essential_Horror_Music/06_Nest_of_Darkness.wav.meta
+    - Assets/Essential_Horror_Music/06_Nest_of_Darkness_1min.mp3
+    - Assets/Essential_Horror_Music/06_Nest_of_Darkness_1min.mp3.meta
+    - Assets/Essential_Horror_Music/06_Nest_of_Darkness_4min.mp3
+    - Assets/Essential_Horror_Music/06_Nest_of_Darkness_4min.mp3.meta
+    - Assets/Essential_Horror_Music/07_Crimson_Castle.ogg
+    - Assets/Essential_Horror_Music/07_Crimson_Castle.ogg.meta
+    - Assets/Essential_Horror_Music/07_Crimson_Castle.wav
+    - Assets/Essential_Horror_Music/07_Crimson_Castle.wav.meta
+    - Assets/Essential_Horror_Music/07_Crimson_Castle_1min.mp3
+    - Assets/Essential_Horror_Music/07_Crimson_Castle_1min.mp3.meta
+    - Assets/Essential_Horror_Music/07_Crimson_Castle_4min.mp3
+    - Assets/Essential_Horror_Music/07_Crimson_Castle_4min.mp3.meta
+    - Assets/Essential_Horror_Music/08_JINGLE_Horror_Continue.mp3
+    - Assets/Essential_Horror_Music/08_JINGLE_Horror_Continue.mp3.meta
+    - Assets/Essential_Horror_Music/08_JINGLE_Horror_Continue.ogg
+    - Assets/Essential_Horror_Music/08_JINGLE_Horror_Continue.ogg.meta
+    - Assets/Essential_Horror_Music/08_JINGLE_Horror_Continue.wav
+    - Assets/Essential_Horror_Music/08_JINGLE_Horror_Continue.wav.meta
+    - Assets/Prefabs.meta
+    - "Assets/Prefabs/1\uCE35\uBC15\uC2A4.prefab"
+    - "Assets/Prefabs/1\uCE35\uBC15\uC2A4.prefab.meta"
+    - Assets/Prefabs/Case_None_1.prefab
+    - Assets/Prefabs/Case_None_1.prefab.meta
+    - Assets/Prefabs/Character.physicsMaterial2D
+    - Assets/Prefabs/Character.physicsMaterial2D.meta
+    - Assets/Prefabs/Classroom_01_01.prefab
+    - Assets/Prefabs/Classroom_01_01.prefab.meta
+    - Assets/Prefabs/Classroom_01_01_In01.prefab
+    - Assets/Prefabs/Classroom_01_01_In01.prefab.meta
+    - Assets/Prefabs/Classroom_01_01_Out01.prefab
+    - Assets/Prefabs/Classroom_01_01_Out01.prefab.meta
+    - Assets/Prefabs/ComDesk_None.prefab
+    - Assets/Prefabs/ComDesk_None.prefab.meta
+    - Assets/Prefabs/Door1_1.prefab
+    - Assets/Prefabs/Door1_1.prefab.meta
+    - Assets/Prefabs/Enemy.prefab
+    - Assets/Prefabs/Enemy.prefab.meta
+    - Assets/Prefabs/Enemy1.prefab
+    - Assets/Prefabs/Enemy1.prefab.meta
+    - Assets/Prefabs/HallWay_01_02_In.prefab
+    - Assets/Prefabs/HallWay_01_02_In.prefab.meta
+    - Assets/Prefabs/HallWay_01_02_Out.prefab
+    - Assets/Prefabs/HallWay_01_02_Out.prefab.meta
+    - Assets/Prefabs/Hallway_01.prefab
+    - Assets/Prefabs/Hallway_01.prefab.meta
+    - Assets/Prefabs/Hallway_02.prefab
+    - Assets/Prefabs/Hallway_02.prefab.meta
+    - Assets/Prefabs/Hit.prefab
+    - Assets/Prefabs/Hit.prefab.meta
+    - Assets/Prefabs/Menu set.prefab
+    - Assets/Prefabs/Menu set.prefab.meta
+    - Assets/Prefabs/Platform.physicsMaterial2D
+    - Assets/Prefabs/Platform.physicsMaterial2D.meta
+    - Assets/Prefabs/Player.prefab
+    - Assets/Prefabs/Player.prefab.meta
+    - Assets/Prefabs/Wall_Material.physicsMaterial2D
+    - Assets/Prefabs/Wall_Material.physicsMaterial2D.meta
+    - Assets/Prefabs/diary.prefab
+    - Assets/Prefabs/diary.prefab.meta
+    - Assets/Prefabs/eye.prefab
+    - Assets/Prefabs/eye.prefab.meta
+    - Assets/Prefabs/fabrication.prefab
+    - Assets/Prefabs/fabrication.prefab.meta
+    - Assets/Prefabs/key.prefab
+    - Assets/Prefabs/key.prefab.meta
+    - Assets/Prefabs/rumor.prefab
+    - Assets/Prefabs/rumor.prefab.meta
+    - Assets/Prefabs/unity_spon(rumor).png
+    - Assets/Prefabs/unity_spon(rumor).png.meta
+    - "Assets/Prefabs/\uAD50\uC7A5\uC2E4\uC5F4\uC1E0.prefab"
+    - "Assets/Prefabs/\uAD50\uC7A5\uC2E4\uC5F4\uC1E0.prefab.meta"
+    - "Assets/Prefabs/\uCCAB\uBC88\uC9F8 \uB2E4\uC774\uC5B4\uB9AC.prefab"
+    - "Assets/Prefabs/\uCCAB\uBC88\uC9F8 \uB2E4\uC774\uC5B4\uB9AC.prefab.meta"
+    - Assets/Scenes.meta
+    - Assets/Scenes/SampleScene.unity
+    - Assets/Scenes/SampleScene.unity.meta
+    - Assets/Scenes/Title.unity
+    - Assets/Scenes/Title.unity.meta
+    - Assets/Scripts.meta
+    - Assets/Scripts/Button.cs
+    - Assets/Scripts/Button.cs.meta
+    - Assets/Scripts/Crouch.cs
+    - Assets/Scripts/Crouch.cs.meta
+    - Assets/Scripts/Enemy1Move.cs
+    - Assets/Scripts/Enemy1Move.cs.meta
+    - Assets/Scripts/EnemyMove.cs
+    - Assets/Scripts/EnemyMove.cs.meta
+    - Assets/Scripts/HPbar.cs
+    - Assets/Scripts/HPbar.cs.meta
+    - Assets/Scripts/Hit.cs
+    - Assets/Scripts/Hit.cs.meta
+    - Assets/Scripts/Inventory.cs
+    - Assets/Scripts/Inventory.cs.meta
+    - Assets/Scripts/InventoryUI.cs
+    - Assets/Scripts/InventoryUI.cs.meta
+    - Assets/Scripts/Staminabar.cs
+    - Assets/Scripts/Staminabar.cs.meta
+    - Assets/Scripts/Teleport.cs
+    - Assets/Scripts/Teleport.cs.meta
+    - Assets/Scripts/box.cs
+    - Assets/Scripts/box.cs.meta
+    - Assets/Scripts/diary.cs
+    - Assets/Scripts/diary.cs.meta
+    - Assets/Scripts/door.cs
+    - Assets/Scripts/door.cs.meta
+    - Assets/Scripts/eye.cs
+    - Assets/Scripts/eye.cs.meta
+    - Assets/Scripts/fabrication.cs
+    - Assets/Scripts/fabrication.cs.meta
+    - Assets/Scripts/gamemanager.cs
+    - Assets/Scripts/gamemanager.cs.meta
+    - Assets/Scripts/itemdescription.cs
+    - Assets/Scripts/itemdescription.cs.meta
+    - Assets/Scripts/key.cs
+    - Assets/Scripts/key.cs.meta
+    - Assets/Scripts/keydiaryscore.cs
+    - Assets/Scripts/keydiaryscore.cs.meta
+    - Assets/Scripts/moveing.cs
+    - Assets/Scripts/moveing.cs.meta
+    - Assets/Scripts/rumor.cs
+    - Assets/Scripts/rumor.cs.meta
+    - Assets/Scripts/scoremanager.cs
+    - Assets/Scripts/scoremanager.cs.meta
+    - Assets/Scripts/stair.cs
+    - Assets/Scripts/stair.cs.meta
+    - Assets/Sprite.meta
+    - Assets/Sprite/213424_0 1.controller
+    - Assets/Sprite/213424_0 1.controller.meta
+    - Assets/Sprite/213424_0.controller
+    - Assets/Sprite/213424_0.controller.meta
+    - Assets/Sprite/Chasing.anim
+    - Assets/Sprite/Chasing.anim.meta
+    - Assets/Sprite/Enemy Move.anim
+    - Assets/Sprite/Enemy Move.anim.meta
+    - Assets/Sprite/Enemy screaming.anim
+    - Assets/Sprite/Enemy screaming.anim.meta
+    - Assets/Sprite/Enemy.controller
+    - Assets/Sprite/Enemy.controller.meta
+    - Assets/Sprite/Enemy1 Move.anim
+    - Assets/Sprite/Enemy1 Move.anim.meta
+    - Assets/Sprite/Enemy1.controller
+    - Assets/Sprite/Enemy1.controller.meta
+    - Assets/Sprite/Enemy2.controller
+    - Assets/Sprite/Enemy2.controller.meta
+    - Assets/Sprite/Hallway_00.jpg
+    - Assets/Sprite/Hallway_00.jpg.meta
+    - Assets/Sprite/Hallway_01.jpg
+    - Assets/Sprite/Hallway_01.jpg.meta
+    - Assets/Sprite/HoldE.png
+    - Assets/Sprite/HoldE.png.meta
+    - Assets/Sprite/KakaoTalk_20210402_225728001.png
+    - Assets/Sprite/KakaoTalk_20210402_225728001.png.meta
+    - Assets/Sprite/KakaoTalk_20210402_225728001_01.png
+    - Assets/Sprite/KakaoTalk_20210402_225728001_01.png.meta
+    - Assets/Sprite/KakaoTalk_20210402_225728001_02.png
+    - Assets/Sprite/KakaoTalk_20210402_225728001_02.png.meta
+    - Assets/Sprite/KakaoTalk_20210402_225728001_03.png
+    - Assets/Sprite/KakaoTalk_20210402_225728001_03.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_080732090.png
+    - Assets/Sprite/KakaoTalk_20210403_080732090.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_080732090_01.png
+    - Assets/Sprite/KakaoTalk_20210403_080732090_01.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_080732090_02.png
+    - Assets/Sprite/KakaoTalk_20210403_080732090_02.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_080732090_03.png
+    - Assets/Sprite/KakaoTalk_20210403_080732090_03.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_080732090_04.png
+    - Assets/Sprite/KakaoTalk_20210403_080732090_04.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_080732090_05.png
+    - Assets/Sprite/KakaoTalk_20210403_080732090_05.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_080732090_06.png
+    - Assets/Sprite/KakaoTalk_20210403_080732090_06.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_080732090_07.png
+    - Assets/Sprite/KakaoTalk_20210403_080732090_07.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_080732090_08.png
+    - Assets/Sprite/KakaoTalk_20210403_080732090_08.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_081951474.png
+    - Assets/Sprite/KakaoTalk_20210403_081951474.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_081951474_01.png
+    - Assets/Sprite/KakaoTalk_20210403_081951474_01.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_081951474_02.png
+    - Assets/Sprite/KakaoTalk_20210403_081951474_02.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_081951474_03.png
+    - Assets/Sprite/KakaoTalk_20210403_081951474_03.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_081951474_04.png
+    - Assets/Sprite/KakaoTalk_20210403_081951474_04.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_081951474_05.png
+    - Assets/Sprite/KakaoTalk_20210403_081951474_05.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_194100737.png
+    - Assets/Sprite/KakaoTalk_20210403_194100737.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_194100737_01.png
+    - Assets/Sprite/KakaoTalk_20210403_194100737_01.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_194100737_02.png
+    - Assets/Sprite/KakaoTalk_20210403_194100737_02.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_194100737_03.png
+    - Assets/Sprite/KakaoTalk_20210403_194100737_03.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_194100737_04.png
+    - Assets/Sprite/KakaoTalk_20210403_194100737_04.png.meta
+    - Assets/Sprite/KakaoTalk_20210403_194100737_05.png
+    - Assets/Sprite/KakaoTalk_20210403_194100737_05.png.meta
+    - Assets/Sprite/KakaoTalk_20210430_090602502.png
+    - Assets/Sprite/KakaoTalk_20210430_090602502.png.meta
+    - Assets/Sprite/KakaoTalk_20210430_090602755.png
+    - Assets/Sprite/KakaoTalk_20210430_090602755.png.meta
+    - Assets/Sprite/KakaoTalk_20210526_124911764_01.png
+    - Assets/Sprite/KakaoTalk_20210526_124911764_01.png.meta
+    - Assets/Sprite/KakaoTalk_20210526_124911764_02.png
+    - Assets/Sprite/KakaoTalk_20210526_124911764_02.png.meta
+    - Assets/Sprite/KakaoTalk_20210527_175137310_02.png
+    - Assets/Sprite/KakaoTalk_20210527_175137310_02.png.meta
+    - Assets/Sprite/KakaoTalk_20210527_175725599.png
+    - Assets/Sprite/KakaoTalk_20210527_175725599.png.meta
+    - Assets/Sprite/KakaoTalk_20210601_110341957.png
+    - Assets/Sprite/KakaoTalk_20210601_110341957.png.meta
+    - Assets/Sprite/KakaoTalk_20210601_110341957_01.png
+    - Assets/Sprite/KakaoTalk_20210601_110341957_01.png.meta
+    - Assets/Sprite/KakaoTalk_20210601_110341957_02.png
+    - Assets/Sprite/KakaoTalk_20210601_110341957_02.png.meta
+    - Assets/Sprite/KakaoTalk_20210601_110341957_03.png
+    - Assets/Sprite/KakaoTalk_20210601_110341957_03.png.meta
+    - Assets/Sprite/PressE.png
+    - Assets/Sprite/PressE.png.meta
+    - Assets/Sprite/Rat.anim
+    - Assets/Sprite/Rat.anim.meta
+    - Assets/Sprite/box.png
+    - Assets/Sprite/box.png.meta
+    - Assets/Sprite/crouch.anim
+    - Assets/Sprite/crouch.anim.meta
+    - Assets/Sprite/diarysound.mp3
+    - Assets/Sprite/diarysound.mp3.meta
+    - Assets/Sprite/enemysound.mp3
+    - Assets/Sprite/enemysound.mp3.meta
+    - Assets/Sprite/fabrication 1.controller
+    - Assets/Sprite/fabrication 1.controller.meta
+    - Assets/Sprite/fabrication.controller
+    - Assets/Sprite/fabrication.controller.meta
+    - Assets/Sprite/fabrication_spawn.png
+    - Assets/Sprite/fabrication_spawn.png.meta
+    - Assets/Sprite/fabrication_stay.png
+    - Assets/Sprite/fabrication_stay.png.meta
+    - Assets/Sprite/hallway.png
+    - Assets/Sprite/hallway.png.meta
+    - Assets/Sprite/knockback.anim
+    - Assets/Sprite/knockback.anim.meta
+    - Assets/Sprite/spon.anim
+    - Assets/Sprite/spon.anim.meta
+    - Assets/Sprite/sponer open.anim
+    - Assets/Sprite/sponer open.anim.meta
+    - "Assets/Sprite/unity_char(1) \uBC18\uC804.png"
+    - "Assets/Sprite/unity_char(1) \uBC18\uC804.png.meta"
+    - Assets/Sprite/unity_char(Jump).png
+    - Assets/Sprite/unity_char(Jump).png.meta
+    - Assets/Sprite/unity_char(Run).png
+    - Assets/Sprite/unity_char(Run).png.meta
+    - "Assets/Sprite/unity_char(Stop) \uBC18\uC804.png"
+    - "Assets/Sprite/unity_char(Stop) \uBC18\uC804.png.meta"
+    - Assets/Sprite/unity_char(sit).png
+    - Assets/Sprite/unity_char(sit).png.meta
+    - Assets/Sprite/unity_knockback.png
+    - Assets/Sprite/unity_knockback.png.meta
+    - Assets/Sprite/unity_rumor.png
+    - Assets/Sprite/unity_rumor.png.meta
+    - "Assets/Sprite/unity_\uAC74\uBB3C(2).png"
+    - "Assets/Sprite/unity_\uAC74\uBB3C(2).png.meta"
+    - "Assets/Sprite/unity_\uBC30\uACBD(3).png"
+    - "Assets/Sprite/unity_\uBC30\uACBD(3).png.meta"
+    - "Assets/Sprite/unity_\uBC30\uACBD(4).png"
+    - "Assets/Sprite/unity_\uBC30\uACBD(4).png.meta"
+    - "Assets/Sprite/\uB208.png"
+    - "Assets/Sprite/\uB208.png.meta"
+    - "Assets/Sprite/\uBE44\uBA85.mp3"
+    - "Assets/Sprite/\uBE44\uBA85.mp3.meta"
+    - "Assets/Sprite/\uC0C1\uCC98\uC785\uC740\uC544\uC774 \uC774\uB3D9.png"
+    - "Assets/Sprite/\uC0C1\uCC98\uC785\uC740\uC544\uC774 \uC774\uB3D9.png.meta"
+    - "Assets/Sprite/\uC0C1\uCC98\uC785\uC740\uC544\uC774 \uD50C\uB808\uC774\uC5B4\uB791
+      \uB9CC\uB0A0\uC2DC \uBE44\uBA85.png"
+    - "Assets/Sprite/\uC0C1\uCC98\uC785\uC740\uC544\uC774 \uD50C\uB808\uC774\uC5B4\uB791
+      \uB9CC\uB0A0\uC2DC \uBE44\uBA85.png.meta"
+    - "Assets/Sprite/\uC228.mp3"
+    - "Assets/Sprite/\uC228.mp3.meta"
+    - "Assets/Sprite/\uD0C0\uACA9.mp3"
+    - "Assets/Sprite/\uD0C0\uACA9.mp3.meta"
+    - Assets/Titlescene.meta
+    - Assets/Titlescene/12345.jpg
+    - Assets/Titlescene/12345.jpg.meta
+    - Assets/Titlescene/4.png
+    - Assets/Titlescene/4.png.meta
+    - Assets/Titlescene/6.png
+    - Assets/Titlescene/6.png.meta
+    - Assets/Titlescene/7.png
+    - Assets/Titlescene/7.png.meta
+    - Assets/Titlescene/EXIT.cs
+    - Assets/Titlescene/EXIT.cs.meta
+    - Assets/Titlescene/Return.cs
+    - Assets/Titlescene/Return.cs.meta
+    - Assets/Titlescene/SceneChanger.cs
+    - Assets/Titlescene/SceneChanger.cs.meta
+    - Packages/manifest.json
+    - Packages/packages-lock.json
+    - ProjectSettings/AudioManager.asset
+    - ProjectSettings/ClusterInputManager.asset
+    - ProjectSettings/DynamicsManager.asset
+    - ProjectSettings/EditorBuildSettings.asset
+    - ProjectSettings/EditorSettings.asset
+    - ProjectSettings/GraphicsSettings.asset
+    - ProjectSettings/InputManager.asset
+    - ProjectSettings/NavMeshAreas.asset
+    - ProjectSettings/Physics2DSettings.asset
+    - ProjectSettings/PresetManager.asset
+    - ProjectSettings/ProjectSettings.asset
+    - ProjectSettings/ProjectVersion.txt
+    - ProjectSettings/QualitySettings.asset
+    - ProjectSettings/TagManager.asset
+    - ProjectSettings/TimeManager.asset
+    - ProjectSettings/UnityConnectSettings.asset
+    - ProjectSettings/VFXManager.asset
+    - ProjectSettings/VersionControlSettings.asset
+    - 
+    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
