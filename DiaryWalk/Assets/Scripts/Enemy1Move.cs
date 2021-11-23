@@ -12,21 +12,40 @@ public class Enemy1Move : MonoBehaviour
     SpriteRenderer spriteRenderer;
     Transform target;
     float moveSpeed = 3f;
-    float contactDistance = 1f;
-    bool follow = false;
     public int targetDirection;
-    private Vector3 movement;
     public int tp;
+    private float thisTime = 0.0f;
 
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        target = Player.GetComponent<Transform>();
     }
 
     void Update()
     {
-        FollowTarget();
+        if (anim.GetBool("Chasing"))
+            FollowTarget();
+
+
+        thisTime += Time.deltaTime;
+        if (thisTime > 2)
+        {
+            randomMove();
+        }
+
+        if (this.rigid.velocity.x > 0.01f)
+        {
+            anim.SetFloat("MoveSpeed", this.rigid.velocity.x * 50);
+            spriteRenderer.flipX = false;
+        }
+        else if (this.rigid.velocity.x < -0.01f)
+        {
+            anim.SetFloat("MoveSpeed", -this.rigid.velocity.x*50);
+            spriteRenderer.flipX = true;
+
+        }
+
     }
 
     void FollowTarget()
@@ -43,19 +62,18 @@ public class Enemy1Move : MonoBehaviour
             targetDirection = 1; // Right Direction
         }
 
-        if (Vector2.Distance(transform.position, target.position) > contactDistance && follow)
-            transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime * 0.4f);
+      //  if (Vector2.Distance(transform.position, target.position) > contactDistance && follow)
+            transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, moveSpeed * Time.deltaTime * 0.5f);
 
-            float distance = Vector3.Distance(target.position, transform.position);
+            //float distance = Vector3.Distance(target.position, transform.position);
 
     }
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.gameObject==Player)
         {
-            anim.SetTrigger("Chasing");
-            follow = true;
+            anim.SetBool("Chasing", true);
             if (targetDirection == 0)
             {
                 spriteRenderer.flipX = true;
@@ -69,10 +87,9 @@ public class Enemy1Move : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.gameObject == Player)
         {
-            anim.SetTrigger("isWalking");
-            follow = false;         
+            anim.SetBool("Chasing", false);
         }
     }
 
@@ -81,7 +98,6 @@ public class Enemy1Move : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        Invoke("Think", 3);
     }
 
 
@@ -89,7 +105,6 @@ public class Enemy1Move : MonoBehaviour
     void FixedUpdate()
     {
         rigid.velocity = new Vector2(nextMove, rigid.velocity.y);
-
     }
 
     private Vector3 getPosition()
@@ -112,13 +127,11 @@ public class Enemy1Move : MonoBehaviour
     }
 
 
-    void Think()
+    void randomMove()
     {
         nextMove = Random.Range(-1, 2);
-        anim.SetInteger("MoveSpeed", nextMove);
-        Invoke("Think", 3);
-        if (nextMove != 0)
-            spriteRenderer.flipX = nextMove == -1;
+        anim.SetFloat("MoveSpeed", nextMove);
+        thisTime = 0.0f;
     }
 
 }
