@@ -93,10 +93,6 @@ public class door : MonoBehaviour
                 { //맞는 열쇠가 존재 시
                     mCanUsePortal = true;
                 }
-                else
-                {
-                    mCanUsePortal = false;
-                }
             }
         }
 
