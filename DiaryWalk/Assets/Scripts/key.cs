@@ -8,6 +8,8 @@ public class key: MonoBehaviour {
 	public GameObject Camera;
 	public bool iskey = false;
 	public int getscore = 1;
+	public string itemName="";
+	public string itemDescription = "";
 
 	void Start() {
 
@@ -33,7 +35,7 @@ public class key: MonoBehaviour {
 		Camera.GetComponent<scoremanager>().setitemcounter();
 	}
 	void keyGUI() {
-		Camera.GetComponent<scoremanager>().changecontentskeyget(this.gameObject.name);
+		Camera.GetComponent<scoremanager>().changecontentskeyget(itemName);
 		Camera.GetComponent<scoremanager>().setmessageAlpha(2);
 	}
 	void keyactive() {

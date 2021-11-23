@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class itemdescription : MonoBehaviour {
     public GameObject description;
     public GameObject descText;
+    public string desc;
     bool activedescription = false;
 
     public void Start() {
@@ -19,14 +20,15 @@ public class itemdescription : MonoBehaviour {
         string str = this.gameObject.name;
         string str2 = Regex.Replace(str, @"\D", ""); //button 0에서 0을 추출
         string itemname = GameObject.Find("Player").GetComponent<Inventory>().items[int.Parse(str2)].name;
+        GameObject item = GameObject.Find("Player").GetComponent<Inventory>().items[int.Parse(str2)];
             activedescription = !activedescription;
             description.SetActive(activedescription);
             if(itemname.Contains("열쇠")) {
-                descText.GetComponent<Text>().text=itemname;
-                descText.GetComponent<Text>().text+="입니다";
+
+                descText.GetComponent<Text>().text=item.GetComponent<key>().itemDescription;
             }else if(itemname.Contains("다이어리")) {
-                descText.GetComponent<Text>().text=itemname;
-                descText.GetComponent<Text>().text+="입니다";
+            descText.GetComponent<Text>().text = item.GetComponent<diary>().itemDescription;
+
             }
     }
 

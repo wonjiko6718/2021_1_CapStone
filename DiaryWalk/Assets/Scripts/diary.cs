@@ -5,8 +5,12 @@ using UnityEngine;
 
 public class diary : MonoBehaviour {
 
+    public string itemName = "";
+    public string itemDescription = "";
     public bool isdiary = false;
 	public int getscore = 1;
+    public GameObject Camera;
+    public GameObject Player;
 
     void Start() {
     }
@@ -28,12 +32,12 @@ public class diary : MonoBehaviour {
         diarysounds.Play();
     }
     void diarycounter() {
-        GameObject.Find("MainCamera").GetComponent<scoremanager>().setdiarycounter();
-        GameObject.Find("MainCamera").GetComponent<scoremanager>().setitemcounter();
+        Camera.GetComponent<scoremanager>().setdiarycounter();
+        Camera.GetComponent<scoremanager>().setitemcounter();
     }
     void diaryGUI() {
-        GameObject.Find("MainCamera").GetComponent<scoremanager>().changecontentsdiaryget();
-		GameObject.Find("MainCamera").GetComponent<scoremanager>().setmessageAlpha(2);
+        Camera.GetComponent<scoremanager>().changecontentsdiaryget();
+        Camera.GetComponent<scoremanager>().setmessageAlpha(2);
     }
     void diaryactive() {
         if(this.gameObject.name=="diary1") { //먹은 열쇠 이름이 기술실 열쇠라면 기술실열쇠 true
@@ -41,7 +45,7 @@ public class diary : MonoBehaviour {
         }
     }
     void toinventory() {
-		GameObject.Find("Player").GetComponent<Inventory>().inventoryadd(this.gameObject);
+		Player.GetComponent<Inventory>().inventoryadd(this.gameObject);
 	}
     // Update is called once per frame
     void Update() {

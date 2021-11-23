@@ -19,6 +19,7 @@ public class Inventory : MonoBehaviour
     public void inventoryadd(GameObject a) {
         items[count] = a;
         gamemanager.itemname[count] = a.name;
+    //    gamemanager.itemname[count] = a.GetComponent<key>().itemName;
         count+=1;
     }
 }
