@@ -7,7 +7,6 @@ public class Enemy1Move : MonoBehaviour
     Rigidbody2D rigid;
     Animator anim;
     public int nextMove;
-    public GameObject Enemy1;
     public GameObject Player;
     SpriteRenderer spriteRenderer;
     Transform target;
@@ -24,8 +23,7 @@ public class Enemy1Move : MonoBehaviour
 
     void Update()
     {
-        if (anim.GetBool("Chasing"))
-            FollowTarget();
+       
 
 
         thisTime += Time.deltaTime;
@@ -36,12 +34,12 @@ public class Enemy1Move : MonoBehaviour
 
         if (this.rigid.velocity.x > 0.001f) //실시간으로 애니메이션 속도 최신화
         {
-            anim.SetFloat("MoveSpeed", this.rigid.velocity.x * 100);
+            anim.SetFloat("MoveSpeed", this.rigid.velocity.x *50);
             spriteRenderer.flipX = false;
         }
         else if (this.rigid.velocity.x < -0.001f)
         {
-            anim.SetFloat("MoveSpeed", -this.rigid.velocity.x*100);
+            anim.SetFloat("MoveSpeed", -this.rigid.velocity.x*50);
             spriteRenderer.flipX = true;
 
         }
@@ -49,6 +47,8 @@ public class Enemy1Move : MonoBehaviour
         {
             anim.SetFloat("MoveSpeed", 0);
         }
+        if (anim.GetBool("Chasing"))
+            FollowTarget();
 
     }
 

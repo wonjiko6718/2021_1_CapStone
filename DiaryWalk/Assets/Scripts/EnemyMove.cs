@@ -32,7 +32,6 @@ public class EnemyMove : MonoBehaviour
     {
         if (collision.gameObject==Player)
         {
-            this.GetComponent<BoxCollider2D>().enabled= false;
             anim.SetTrigger("Screaming");            
             AudioSource enemysounds = GameObject.Find("enemysound").GetComponent<AudioSource>();
             enemysounds.Play();
