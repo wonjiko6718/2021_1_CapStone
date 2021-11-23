@@ -13,11 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
-    m_Keys:
-    - Assets/Scripts/Enemy1Move.cs
-    - 
-    m_Values: 0101
-  RevisionSummary: Update
+    m_Keys: []
+    m_Values: 
+  RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

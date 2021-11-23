@@ -93,13 +93,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1454}
     - Class: 114
-      Script: {instanceID: 1504}
+      Script: {instanceID: 1456}
     - Class: 114
-      Script: {instanceID: 1568}
+      Script: {instanceID: 1506}
     - Class: 114
-      Script: {instanceID: 1612}
+      Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1636}
+      Script: {instanceID: 1614}
     - Class: 114
       Script: {instanceID: 1836}
     - Class: 114
@@ -129,29 +129,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2930}
     - Class: 114
-      Script: {instanceID: 2980}
+      Script: {instanceID: 2982}
     - Class: 114
-      Script: {instanceID: 3058}
+      Script: {instanceID: 3060}
     - Class: 114
-      Script: {instanceID: 3156}
+      Script: {instanceID: 3158}
     - Class: 114
-      Script: {instanceID: 3476}
+      Script: {instanceID: 3478}
     - Class: 114
-      Script: {instanceID: 3526}
+      Script: {instanceID: 3528}
     - Class: 114
-      Script: {instanceID: 3604}
+      Script: {instanceID: 3606}
     - Class: 114
-      Script: {instanceID: 3698}
+      Script: {instanceID: 3700}
     - Class: 114
-      Script: {instanceID: 3792}
+      Script: {instanceID: 3794}
     - Class: 114
-      Script: {instanceID: 3936}
+      Script: {instanceID: 3938}
     - Class: 114
-      Script: {instanceID: 4156}
+      Script: {instanceID: 4158}
     - Class: 114
-      Script: {instanceID: 4170}
+      Script: {instanceID: 4172}
     - Class: 114
-      Script: {instanceID: 4290}
+      Script: {instanceID: 4292}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -204,9 +204,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2804}
     - Class: 114
-      Script: {instanceID: 3406}
+      Script: {instanceID: 3408}
     - Class: 114
-      Script: {instanceID: 4170}
+      Script: {instanceID: 4172}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -232,6 +232,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 21a9c6dbf300fc1f6dc15ca7e2c39a37
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Slider
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -286,12 +292,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: box
-  - hash:
-      serializedVersion: 2
-      Hash: 21a9c6dbf300fc1f6dc15ca7e2c39a37
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Slider
   - hash:
       serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
@@ -486,7 +486,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: a83ab7dc22b87fcc61eb472322df5366
+      Hash: 37e62d0bf1edb4b80d35ea975a5cd955
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy1Move
@@ -532,6 +532,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InventoryUI
+  - hash:
+      serializedVersion: 2
+      Hash: 6b3bd607f635da826889a433feda9e79
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: dodo
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -808,12 +814,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: 6b3bd607f635da826889a433feda9e79
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: dodo
   platform: 5
   scenePathNames:
   - Assets/Scenes/Title.unity
