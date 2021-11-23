@@ -93,7 +93,7 @@ public class Enemy1Move : MonoBehaviour
     {
         if (collision.gameObject == Player)
         {
-            anim.SetBool("Chasing", false);
+            anim.SetBool("Chasing", true);
         }
     }
 

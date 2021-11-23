@@ -15,12 +15,9 @@ MonoBehaviour:
   SimpleSelectedItems:
     m_Keys:
     - Assets/Scripts/Enemy1Move.cs
-    - "Assets/Sprite/unity_\uBC30\uACBD(4).png"
-    - ProjectSettings/ProjectSettings.asset
-    - ProjectSettings/UnityConnectSettings.asset
     - 
-    m_Values: 0000000000
-  RevisionSummary: 
+    m_Values: 0101
+  RevisionSummary: Update
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
