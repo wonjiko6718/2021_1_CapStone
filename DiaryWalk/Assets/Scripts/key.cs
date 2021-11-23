@@ -4,7 +4,8 @@ using UnityEngine;
 
 
 public class key: MonoBehaviour {
-	
+
+	public GameObject Camera;
 	public bool iskey = false;
 	public int getscore = 1;
 
@@ -28,12 +29,12 @@ public class key: MonoBehaviour {
         keysounds.Play();
 	}
 	void keycounter() {
-		GameObject.Find("MainCamera").GetComponent<scoremanager>().setkeycounter();
-		GameObject.Find("MainCamera").GetComponent<scoremanager>().setitemcounter();
+		Camera.GetComponent<scoremanager>().setkeycounter();
+		Camera.GetComponent<scoremanager>().setitemcounter();
 	}
 	void keyGUI() {
-		GameObject.Find("MainCamera").GetComponent<scoremanager>().changecontentskeyget(this.gameObject.name);
-		GameObject.Find("MainCamera").GetComponent<scoremanager>().setmessageAlpha(2);
+		Camera.GetComponent<scoremanager>().changecontentskeyget(this.gameObject.name);
+		Camera.GetComponent<scoremanager>().setmessageAlpha(2);
 	}
 	void keyactive() {
 		if(this.gameObject.name=="기술실열쇠") { //먹은 열쇠 이름이 기술실 열쇠라면 기술실열쇠 true

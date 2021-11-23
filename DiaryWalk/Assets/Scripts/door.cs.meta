@@ -3,7 +3,16 @@ guid: 09d5cff4d871f77478b7e5647678df86
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Player: {fileID: 54060558497944330, guid: bd2ca69c22cf6f147bebe59a71564144, type: 3}
+  - newdoorSprite: {instanceID: 0}
+  - olddoorSprite: {instanceID: 0}
+  - InTarget: {instanceID: 0}
+  - OutTarget: {instanceID: 0}
+  - PlayerTarget: {instanceID: 0}
+  - InTarget_Trans: {instanceID: 0}
+  - OutTarget_Trans: {instanceID: 0}
+  - needkey: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
