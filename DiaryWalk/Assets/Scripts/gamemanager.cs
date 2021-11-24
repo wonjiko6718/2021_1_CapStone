@@ -35,11 +35,11 @@ public class gamemanager : MonoBehaviour
     }
     public void GameStart()
     {
-        /*
+        
         for(int i=0;i<20;i++) {
             PlayerPrefs.SetString("Inventory"+i, ""); //인벤토리 초기화
             
-        }*/
+        }
     }
     public void GameSave()
     {
